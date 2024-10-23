@@ -33,4 +33,13 @@ class SortManagerTest {
     List<Integer> list = Arrays.asList(5, 3, 8, 4, 2);
     assertThrows(SortException.class, () -> manager.sort(list, MergeSortAlgorithm.class));
   }
+
+  @Test
+  void testSortWithUnknownAlgorithm() {
+    SortManager manager = new SortManager();
+    manager.addAlgorithm(new MergeSortAlgorithm());
+
+    List<Integer> list = Arrays.asList(5, 3, 8, 4, 2);
+    assertThrows(SortException.class, () -> manager.sort(list, BubbleSortAlgorithm.class));
+  }
 }

@@ -22,4 +22,12 @@ class BubbleSortAlgorithmTest {
     List<Integer> list = new ArrayList<>(Collections.nCopies(501, 1));
     assertThrows(SortException.class, () -> algorithm.sort(list));
   }
+
+  @Test
+  void testSortAlreadySorted() throws SortException {
+    BubbleSortAlgorithm algorithm = new BubbleSortAlgorithm();
+    List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+    List<Integer> sortedList = algorithm.sort(list);
+    assertEquals(Arrays.asList(1, 2, 3, 4, 5), sortedList);
+  }
 }

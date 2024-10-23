@@ -23,4 +23,12 @@ class MergeSortAlgorithmTest {
     List<Integer> list = new ArrayList<>(Collections.nCopies(1001, 1));
     assertThrows(SortException.class, () -> algorithm.sort(list));
   }
+
+  @Test
+  void testSortEmptyList() throws SortException {
+    MergeSortAlgorithm algorithm = new MergeSortAlgorithm();
+    List<Integer> list = new ArrayList<>();
+    List<Integer> sortedList = algorithm.sort(list);
+    assertEquals(Collections.emptyList(), sortedList);
+  }
 }
