@@ -4,11 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="288e08f6-8053-4212-ae98-77ed4cc4f967" name="Changes" comment="Доделка part 2" />
+    <list default="true" id="288e08f6-8053-4212-ae98-77ed4cc4f967" name="Changes" comment="Доделка part 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EnrichmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/InMemoryUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MessageEnricher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MsisdnEnricher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/EnrichmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sorting/BubbleSortAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sorting/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sorting/MergeSortAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sorting/SortAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sorting/SortException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sorting/SortManager.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -47,13 +74,16 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2mkzhTaturv2YjRZwijzRf78fR9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "Maven.Array_Sorts [clean].executor": "Run",
     "Maven.Array_Sorts [install].executor": "Run",
     "Maven.Array_Sorts [org.apache.maven.plugins:maven-jar-plugin:3.4.1:test-jar].executor": "Run",
@@ -63,7 +93,7 @@
     "Maven.Array_Sorts [verify].executor": "Run",
     "Maven.Zoo_MTC [package].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Currency",
+    "git-widget-placeholder": "#9 on Currency",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -83,21 +113,6 @@
       <command value="mvn package" />
       <command value="java -jar target/Zoo_MTC-1.0-SNAPSHOT-shaded.jar" />
     </option>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Array_Sorts" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Array_Sorts" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

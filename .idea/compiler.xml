@@ -7,10 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ArrayList" />
+        <module name="Array_Sorts" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Array_Sorts" target="17" />
       <module name="Zoo_MTC" target="17" />
     </bytecodeTargetLevel>
   </component>
