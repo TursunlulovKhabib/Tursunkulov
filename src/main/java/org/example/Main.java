@@ -7,12 +7,9 @@ public class Main {
 
   public static void main(String[] args) {
     UserRepository userRepository = new InMemoryUserRepository();
-
     MessageEnricher msisdnEnricher = new MsisdnEnricher(userRepository);
-
     Map<Message.EnrichmentType, MessageEnricher> enrichers = new HashMap<>();
     enrichers.put(Message.EnrichmentType.MSISDN, msisdnEnricher);
-
     EnrichmentService enrichmentService = new EnrichmentService(enrichers);
 
     // Создаем тестовое входное сообщение
@@ -34,7 +31,6 @@ public class Main {
     System.out.println("Обогащенное сообщение:");
     printMessage(enrichedMessage);
   }
-
   /**
    * Утилитный метод для печати сообщения.
    *
