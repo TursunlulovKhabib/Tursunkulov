@@ -1,4 +1,4 @@
-package org.homework.repository;
+package org.homework;
 
 import org.homework.model.Comment;
 import org.homework.model.CommentId;

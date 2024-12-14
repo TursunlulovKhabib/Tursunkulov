@@ -1,3 +1,5 @@
+package org.homework;
+
 import org.homework.Application;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;

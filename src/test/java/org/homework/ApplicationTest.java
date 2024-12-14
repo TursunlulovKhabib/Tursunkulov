@@ -1,3 +1,5 @@
+package org.homework;
+
 import org.homework.model.Article;
 import org.homework.model.ArticleId;
 import org.junit.Assert;

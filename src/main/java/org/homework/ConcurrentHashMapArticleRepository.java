@@ -1,4 +1,4 @@
-package org.homework.repository;
+package org.homework;
 
 import org.homework.exception.NotFoundException;
 import org.homework.model.Article;

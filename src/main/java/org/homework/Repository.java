@@ -1,4 +1,4 @@
-package org.homework.repository;
+package org.homework;
 
 public interface Repository<ID, E> {
   E findById(ID id);
