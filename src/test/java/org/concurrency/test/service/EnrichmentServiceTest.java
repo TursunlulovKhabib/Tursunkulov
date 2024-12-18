@@ -1,5 +1,12 @@
-import org.example.*;
+package org.concurrency.test.service;
 
+import org.concurrency.exception.EnrichmentException;
+import org.concurrency.model.Message;
+import org.concurrency.repository.InMemoryUserRepository;
+import org.concurrency.repository.UserRepository;
+import org.concurrency.service.EnrichmentService;
+import org.concurrency.service.MessageEnricher;
+import org.concurrency.service.MsisdnEnricher;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.HashMap;
@@ -20,7 +27,7 @@ class EnrichmentServiceTest {
   }
 
   @Test
-  void testEnrich() {
+  void testEnrich() throws EnrichmentException {
     Map<String, String> inputContent = new HashMap<>();
     inputContent.put("action", "button_click");
     inputContent.put("page", "book_card");
@@ -34,7 +41,7 @@ class EnrichmentServiceTest {
   }
 
   @Test
-  void testEnrich_whenMsisdnIsAbsent() {
+  void testEnrich_whenMsisdnIsAbsent() throws EnrichmentException {
     Map<String, String> inputContent = new HashMap<>();
     inputContent.put("action", "button_click");
     Message inputMessage = new Message(inputContent, Message.EnrichmentType.MSISDN);
