@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  homework_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: homework11
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: JavaMTS
+      POSTGRES_DB: homework
+    ports:
+      - "5433:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
